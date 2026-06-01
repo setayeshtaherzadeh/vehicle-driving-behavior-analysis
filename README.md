@@ -30,3 +30,9 @@ Interactive charts
 Alert management system
 Vehicle health monitoring
 Responsive UI
+
+Live Telemetry Stream
+ Vehicle Health Score
+ Historical Charts
+ Responsive Dashboard
+ Simulated Vehicle Data
