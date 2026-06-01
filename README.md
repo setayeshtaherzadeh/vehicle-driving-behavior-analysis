@@ -18,3 +18,15 @@ Trip History
 بهبود UI
 
 و تمام.
+
+
+
+
+##Design and Implementation of a Real-Time Vehicle Telemetry Monitoring Dashboard Using Simulated Data
+
+Features
+Real-time telemetry streaming
+Interactive charts
+Alert management system
+Vehicle health monitoring
+Responsive UI
