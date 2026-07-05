@@ -4,7 +4,7 @@ The raw dataset (dataset.csv) contains 789,373 rows across 31 columns, but many 
 
 ## 1. Column selection
 
-Out of 31 columns, I kept only the 11 relevant to this analysis (timestamp, RPM, speed, throttle, accelerator position, coolant temperature, gear, fuel level, fuel usage, and trip/segment identifiers). Columns like ENGINE_STATUS and OBD_STATUS were entirely empty and dropped; others like TORQUE and POWER had 78%+ missing values due to ECU polling gaps and weren't reliable enough to include here.
+Out of 31 columns, I kept only the 11 relevant to this analysis (timestamp, RPM, speed, throttle, accelerator position, coolant temperature, gear, fuel level, fuel usage, and trip/segment identifiers). Columns like 'ENGINE_STATUS' and 'OBD_STATUS' were entirely empty and dropped; others like 'TORQUE' and 'POWER' had 78%+ missing values due to ECU polling gaps and weren't reliable enough to include here.
 
 ## 2. Timestamp conversion
 
@@ -16,7 +16,7 @@ A small number of SPEED values were exactly 255 the sensor's upper bound, and a 
 
 ## 4. Sorting
 
-Data was sorted by trip (segment_id) and then by timestamp, since later analysis (e.g. detecting harsh braking) depends on rows being in correct chronological order within each trip.
+Data was sorted by trip ('segment_id') and then by timestamp, since later analysis (e.g. detecting harsh braking) depends on rows being in correct chronological order within each trip.
 
 ## 5. Export
 
