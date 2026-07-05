@@ -1,6 +1,6 @@
 # Data cleaning process
 
-The raw dataset (dataset.csv) contains 789,373 rows across 31 columns, but many of them aren't usable as-is some are entirely empty, some have invalid sensor readings, and the timestamp is stored as plain text. Before any analysis, I ran the raw data through the following cleaning steps:
+The raw dataset (`dataset.csv`) contains 789,373 rows across 31 columns, but many of them aren't usable as-is some are entirely empty, some have invalid sensor readings, and the timestamp is stored as plain text. Before any analysis, I ran the raw data through the following cleaning steps:
 
 ## 1. Column selection
 
@@ -20,4 +20,4 @@ Data was sorted by trip (`segment_id`) and then by timestamp, since later analys
 
 ## 5. Export
 
-The cleaned dataset was saved as an xz-compressed CSV (dataset_clean.csv.xz), reducing file size from 179MB to about 9MB while keeping 789,266 rows (99.99% of the original data retained).
+The cleaned dataset was saved as an xz-compressed CSV (`dataset_clean.csv.xz`), reducing file size from 179MB to about 9MB while keeping 789,266 rows (99.99% of the original data retained).
