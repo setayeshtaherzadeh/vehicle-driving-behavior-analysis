@@ -1,6 +1,6 @@
 # Data cleaning process
 
-The raw dataset (dataset.csv) contains 789,373 rows across 31 columns, but many of them aren't usable as-is — some are entirely empty, some have invalid sensor readings, and the timestamp is stored as plain text. Before any analysis, I ran the raw data through the following cleaning steps:
+The raw dataset (dataset.csv) contains 789,373 rows across 31 columns, but many of them aren't usable as-is some are entirely empty, some have invalid sensor readings, and the timestamp is stored as plain text. Before any analysis, I ran the raw data through the following cleaning steps:
 
 ## 1. Column selection
 
@@ -12,7 +12,7 @@ The timestamp column was stored as plain text, so I converted it to a proper dat
 
 ## 3. Filtering invalid sensor readings
 
-A small number of SPEED values were exactly 255 — the sensor's upper bound, and a known placeholder for an invalid reading rather than an actual speed. These 107 rows (0.01% of the data) were removed.
+A small number of SPEED values were exactly 255 the sensor's upper bound, and a known placeholder for an invalid reading rather than an actual speed. These 107 rows (0.01% of the data) were removed.
 
 ## 4. Sorting
 
