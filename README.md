@@ -47,6 +47,8 @@ npm install
 npm run dev
 ```
 
+![Dashboard overview](screenshots/dashboard_full.png)
+
 ## Project structure
 
 ```
