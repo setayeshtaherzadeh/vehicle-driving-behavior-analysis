@@ -27,6 +27,7 @@ Two scripts do the actual work:
 
 Run it:
 ```bash
+pip install -r requirements.txt
 python clean_data.py
 python analyze_data.py
 ```
