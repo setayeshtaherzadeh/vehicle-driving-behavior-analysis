@@ -4,6 +4,7 @@ import MetricCards from "./components/MetricCards";
 import DriveTimeline from "./components/DriveTimeline";
 import PeriodComparison from "./components/PeriodComparison";
 import FuelSpeedScatter from "./components/FuelSpeedScatter";
+import ReplaySimulation from "./components/ReplaySimulation";
 import { correlation } from "./utils/stats";
 
 export default function App() {
@@ -42,11 +43,21 @@ export default function App() {
           A single recorded trip, showing where sudden braking or acceleration
           was flagged along the speed trace.
         </p>
-        <DriveTimeline data={driveSample} />
-      </section>
+     <DriveTimeline data={driveSample} />
+</section>
 
-      <section className="section">
-        <h2>Harsh event rate across driving periods</h2>
+<section className="section">
+  <h2>Replay: live warning simulation</h2>
+  <p className="section-sub">
+    Plays the same recorded drive back second by second and surfaces a
+    warning the instant a harsh event is detected — a stand-in for how
+    this detection logic could feed a real-time in-car alert.
+  </p>
+  <ReplaySimulation data={driveSample} />
+</section>
+
+<section className="section">
+  <h2>Harsh event rate across driving periods</h2>
         <p className="section-sub">
           Each period spans multiple drives between refuels. Rate is normalized
           per 1,000 readings so periods of different lengths are comparable.
