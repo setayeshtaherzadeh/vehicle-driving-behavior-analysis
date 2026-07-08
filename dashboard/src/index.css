@@ -129,3 +129,131 @@ body {
   border-radius: 2px;
   display: inline-block;
 }
+/* Replay simulation */
+
+.replay-card {
+  position: relative;
+}
+
+.replay-disclaimer {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+}
+
+.replay-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.replay-btn {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.replay-btn:hover {
+  border-color: var(--accent);
+}
+
+.replay-btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.replay-speed-group {
+  display: flex;
+  gap: 4px;
+  margin-left: 4px;
+}
+
+.replay-btn.speed {
+  padding: 7px 10px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.replay-btn.speed.active {
+  background: var(--text);
+  border-color: var(--text);
+  color: #fff;
+}
+
+.replay-clock {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.replay-progress-track {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.replay-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.1s linear;
+}
+
+.replay-live-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 16px;
+  min-height: 44px;
+}
+
+.replay-speed-readout .metric-value {
+  font-size: 20px;
+}
+
+.replay-speed-readout .unit {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.replay-warning {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 7px;
+  animation: replay-warning-in 0.2s ease-out, replay-warning-out 0.3s ease-in 1.3s forwards;
+}
+
+.replay-warning.brake {
+  background: #fbe4da;
+  color: var(--warn);
+}
+
+.replay-warning.accel {
+  background: #fde9d2;
+  color: #9a5a10;
+}
+
+@keyframes replay-warning-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes replay-warning-out {
+  to { opacity: 0; }
+}
