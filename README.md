@@ -79,6 +79,7 @@ tests/
 docs/
   data_cleaning.md
   analysis.md
+  technical_report.pdf
 data/
   dataset_clean.csv.xz
   analysis_summary.csv
