@@ -1,5 +1,7 @@
 # Driving behavior analysis
 
+📄 [Technical Report (PDF)](docs/technical_report.pdf)
+
 I built this project to understand something concrete about how software can make sense of real vehicle data — not a simulated dataset, but actual OBD-II telemetry from a car being driven for a year. The goal was to detect risky driving moments (hard braking, sudden acceleration) directly from raw sensor readings, check whether that detection actually means anything, and turn the result into something visual.
 
 This started as a portfolio project while preparing to apply for a master's in automotive software / HMI. The detection method here is deliberately simple — no machine learning, just a statistically grounded threshold — because the point was to get the fundamentals right before adding complexity. See [Limitations](#limitations--next-steps) for where this could go next.
